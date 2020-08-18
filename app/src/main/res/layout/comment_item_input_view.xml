@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data class = "LocusItemBindingComment">
+        <variable
+            name="viewModel"
+            type="com.locus.locushires.LocusItemViewModel" />
+
+    </data>
+
+<LinearLayout
+    android:padding="@dimen/screen_boundary"
+    android:id="@+id/comment_input"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/item_photo"
+        android:textSize="10pt"
+        android:gravity="center_vertical"
+        android:text="@{viewModel.item_title}" />
+
+    <Switch
+        android:id="@+id/commentSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/comment_type"
+        android:switchPadding="182dp"
+        android:textSize="10pt"
+        android:checked="true"/>
+
+    <EditText
+        android:id="@+id/item_commentx"
+        android:layout_width="match_parent"
+        android:focusedByDefault="false"
+        android:paddingStart="@dimen/margin_4"
+        android:layout_height="182dp"
+        android:text="@{viewModel.item_comment}"
+        android:background="@drawable/rounded_corder_edittext"/>
+
+    <Button
+        android:id="@+id/btn_submit_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_4"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorWhite"
+        android:text="@string/Submit_comment"/>
+
+</LinearLayout>
+
+</layout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data class = "LocusItemBinding">
+        <variable
+            name="viewModel"
+            type="com.locus.locushires.LocusItemViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="?android:attr/listPreferredItemHeight"
+        android:padding="6dip">
+
+        <ImageView
+            android:id="@+id/item_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="6dip"
+            app:imageString = "@{viewModel.item_photo}"
+            android:src="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/item_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/item_photo"
+            android:gravity="center_vertical"
+            android:text="@{viewModel.item_title}" />
+
+        <TextView
+            android:id="@+id/item_comment"
+            android:layout_width="fill_parent"
+            android:layout_height="26dip"
+            android:layout_below="@id/item_title"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/item_photo"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:text="@{viewModel.item_comment}" />
+
+<!--        <RadioGroup
+            android:id="@+id/item_options"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/item_comment"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/item_photo"
+            app.radioOptions = "@{viewModel.item_options}"/>-->
+
+    </RelativeLayout>
+
+</layout>

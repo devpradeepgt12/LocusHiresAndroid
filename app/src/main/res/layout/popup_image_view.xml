@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:padding="@dimen/screen_boundary"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/popup_imageview"
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:scaleType="fitXY"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:layout_marginTop="@dimen/screen_boundary"
+        android:textColor="@color/colorWhite"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:id="@+id/ok_btn" />
+</LinearLayout>

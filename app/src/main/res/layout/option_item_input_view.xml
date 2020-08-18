@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data class = "LocusItemBindingOptions">
+        <variable
+            name="viewModel"
+            type="com.locus.locushires.LocusItemViewModel" />
+    </data>
+
+<LinearLayout
+    android:orientation="vertical"
+    android:padding="@dimen/screen_boundary"
+    android:id="@+id/option_input"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/item_photo"
+        android:gravity="center_vertical"
+        android:textSize="10pt"
+        android:text="@{viewModel.item_title}" />
+
+    <TextView
+        android:id="@+id/TextViewTitle"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_option"
+        android:textSize="10pt"/>
+
+    <RadioGroup
+        android:id="@+id/radio_group_options"
+        android:padding="@dimen/screen_boundary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="choice one"
+            android:visibility="gone"
+            android:id="@+id/choice_one"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="choice two"
+            android:visibility="gone"
+            android:id="@+id/choice_two"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="choice three"
+            android:visibility="gone"
+            android:id="@+id/choice_three"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="choice four"
+            android:visibility="gone"
+            android:id="@+id/choice_four"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="choice five"
+            android:visibility="gone"
+            android:id="@+id/choice_five"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="choice six"
+            android:visibility="gone"
+            android:id="@+id/choice_six"/>
+
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_submit_option"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorWhite"
+        android:text="@string/Submit_choice"/>
+</LinearLayout>
+</layout>

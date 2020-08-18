@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">LocusHires</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="addLocusItemtitle">Add Locus Item</string>
+    <string name="item_name">Item name</string>
+    <string name="photo_type">photo</string>
+    <string name="comment_type">comment</string>
+    <string name="option_type">option</string>
+    <string name="selectLocusItemType">Select Locus Item Type</string>
+    <string name="select_type">Select Locus Item Type</string>
+    <string name="select_option">Select an option</string>
+    <string name="Submit_choice">Submit Choice</string>
+    <string name="Submit_comment">Submit Comment</string>
+    <string name="Submit_photo">Submit Photo</string>
+    <string name="thanks_successfully_submitted">Thanks! successfully submitted.</string>
+
+    <string-array name="locusItemType">
+        <item>@string/select_type</item>
+        <item>@string/photo_type</item>
+        <item>@string/comment_type</item>
+        <item>@string/option_type</item>
+    </string-array>
+</resources>
